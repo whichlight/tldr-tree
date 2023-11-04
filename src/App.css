@@ -1,6 +1,8 @@
 .app {
-  margin: 0px auto;
-  width: 50%;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto; /* centering the app */
+  max-width: 400px; /* limiting the max-width to keep the text readable */
 }
 
 .node {

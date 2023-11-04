@@ -1,14 +1,23 @@
 .app {
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 .node {
   cursor: pointer;
+  width: 400px;
+  margin: 10px;
 }
 
 .node.active {
-  color: blue;
+  color: rgb(152, 152, 152);
+}
+
+.rawtext {
+  color: rgb(0, 0, 0);
+  font-family: Times;
+  font-size: 20px;
+  border-left: 4px solid rgb(170, 170, 170); /* Specify the width, style, and color of the left border */
+  padding-left: 10px;
+  list-style-type: none;
 }
 
 .child-nodes {

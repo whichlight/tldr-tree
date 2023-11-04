@@ -4,20 +4,22 @@ import "./App.css";
 
 const TreeNode = ({ node }) => {
   const [isOpen, setOpen] = useState(false);
-  const [activeNode, setActiveNode] = useState(null);
 
   const handleToggle = (name) => {
-    setOpen(!isOpen);
-    setActiveNode(name);
+    if ("children" in node) {
+      if (node.children.length > 0) setOpen(!isOpen);
+    }
   };
 
   return (
     <li>
       <div
-        onClick={() => handleToggle(node.name)}
-        className={`node ${activeNode === node.text ? "active" : ""}`}
+        onClick={() => handleToggle(node.text)}
+        className={`node ${isOpen == true ? "active" : ""} ${
+          "children" in node ? "" : "rawtext"
+        }`}
       >
-        {node.text}
+        {isOpen == true ? node.text.substring(0, 50) + "..." : node.text}
       </div>
       {isOpen && node.children && (
         <ul className="child-nodes">

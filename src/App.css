@@ -18,7 +18,7 @@ ul li {
 
 .node {
   cursor: pointer;
-  width: 400px;
+  width: 300px;
   margin: 10px;
   border: 1px solid rgb(190, 190, 190);
   padding: 10px;

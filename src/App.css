@@ -5,10 +5,24 @@
   max-width: 400px; /* limiting the max-width to keep the text readable */
 }
 
+.tree {
+  list-style-position: inside;
+  list-style-type: none;
+  margin-left: -30px;
+}
+
+ul li {
+  margin-left: -20px; /* Adjust the value to control spacing */
+  list-style-type: none;
+}
+
 .node {
   cursor: pointer;
   width: 400px;
   margin: 10px;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .node.active {

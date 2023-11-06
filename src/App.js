@@ -67,7 +67,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <ul>
+      <ul className="tree">
         <TreeNode node={Data} />
       </ul>
     </div>
